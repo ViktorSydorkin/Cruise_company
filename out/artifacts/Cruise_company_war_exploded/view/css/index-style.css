@@ -1,0 +1,47 @@
+.cruise-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3vh;
+    flex-direction: column;
+    gap: 3vh;
+}
+.cruise-container-element{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2vh;
+}
+.cruise-pages{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2vh;
+    align-content: center;
+    width: 100%;
+    padding: 2vh;
+}
+.cruise-description{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: justify;
+}
+.liner-photo{
+    max-width: 43%;
+}
+.cruise-text{
+    max-width: 45%;
+}
+.card-text:last-child {
+     margin-bottom: 1rem;
+}
+.apply{
+    margin-bottom: 1rem;
+}
+.mb-2 {
+    margin-bottom: 0.5rem!important;
+    margin-top: 0.5rem!important;
+}

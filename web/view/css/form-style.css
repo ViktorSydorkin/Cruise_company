@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+input {
+    height: 45px;
+    width: 100%;
+    color: #2e2e2e;
+    font-size: 14px;
+    line-height: 16px;
+    border: 2px solid #2e2e2e;
+    border-radius: 5px;
+    padding-left: 25px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #2e2e2e;
+}
+
+input:valid {
+    border-color: greenyellow;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:not(:focus):invalid {
+    border-color: #2e2e2e;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-settings{
+    height: 92vh;
+}
+
+.circle {
+    position: absolute;
+    z-index: 1;
+    width: 2534px;
+    height: 2534px;
+    border-radius: 20px;
+    background: #F7FAFF;
+    box-shadow: 0 4px 70px 6px rgba(217, 229, 255, 0.25);
+    animation-name: fadeCircle;
+    animation-duration: .7s;
+    animation-timing-function: ease-in-out;
+    animation-delay: .3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeCircle {
+    0% {
+        width: 2534px;
+        height: 2534px;
+    }
+    25% {
+        width: 2000px;
+        height: 2000px;
+    }
+    50% {
+        width: 1500px;
+        height: 1500px;
+    }
+    75% {
+        width: 1000px;
+        height: 1000px;
+    }
+    100% {
+        width: 534px;
+        height: 534px;
+    }
+}
+
+.register-form-container {
+    opacity: 0;
+    position: relative;
+    z-index: 2;
+    max-width: 415px;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0 6px 50px rgba(217, 229, 255, 0.7);
+    border-radius: 20px;
+    padding: 38px 30px;
+    animation-name: fadeForm;
+    animation-duration: .7s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeForm {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: .25;
+    }
+    50% {
+        opacity: .5;
+    }
+    75% {
+        opacity: .75;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.form-title {
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 38px;
+    text-align: center;
+}
+
+.form-field {
+    margin-bottom: 13px;
+}
+.form-buttons{
+    margin-bottom: 13px;
+}
+.button {
+    width: 100%;
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    height: 45px;
+    background: #2e2e2e;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+    border: none;
+    padding-left: 0!important;
+}
+
+.button:hover {
+    background-color: #5c5c5c;
+    color: #fff;
+}
+
+a.button {
+    text-decoration: none;
+}
+
+.divider {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #405D87;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.input_wrapper {
+    width: 100%;
+    position: relative;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.file {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+.file-button-text {
+    margin-top: 1px;
+}
+
+.file-button {
+    width: 100%;
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    height: 45px;
+    background: #2e2e2e;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+    border: none;
+}
+.file-button:hover{
+    background-color: #5c5c5c;
+}
